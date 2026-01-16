@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    // Environment setup & latest features
+    "target": "ESNext",
+    "module": "Preserve",
+
+    // Bundler mode
+    "moduleResolution": "bundler",
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "types": ["bun-types"]
+
+  },
+  "include": ["src/**/*"]
+}
