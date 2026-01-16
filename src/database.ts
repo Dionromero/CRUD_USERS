@@ -14,7 +14,7 @@ export async function inicializarBanco(){
     id SERIAL PRIMARY KEY, 
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    idade INTENGER CHECK (idade >= 0 AND idade <= 150),
+    idade INTENGER CHECK (idade >= 18 AND idade <= 150),
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )
