@@ -85,21 +85,24 @@ export default function CatalogoJogos() {
     if (!isLoggedIn) {
       navigate(`/login`)
     } else {
-      alert(`Abrindo ${jogoId}! 🎮`)
+      navigate('/escolha_perfil')
     }
   }
 
   return (
     <div className="bg-sky-gradient min-h-screen relative flex flex-col items-center overflow-hidden">
-      {/* Fundo */}
+      {/* Nuvens e montanha */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
+      {[...Array(3)].map((_, i) => (
         <img
-          src="/img/Nuvens2.svg"
-          className="absolute left-1/2 -translate-x-1/2 top-[15%] w-[130%] h-auto animate-[pulse_4s_ease-in-out_infinite]"
+          key={i}
+          src="/imagem/Nuvens.svg"
+          className="animate-float"
           alt=""
         />
+      ))}
         <img
-          src="/img/montanha.svg"
+          src="/imagem/Montanha.svg"
           className="absolute bottom-0 w-[200%] md:w-full max-w-none left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 h-auto translate-y-[15%] md:translate-y-[40%] object-cover"
           alt=""
         />
@@ -108,7 +111,7 @@ export default function CatalogoJogos() {
       {/* Header */}
       <header className="relative z-10 w-full max-w-[1200px] mx-auto px-6 md:px-10 pt-8 flex justify-between items-center">
         <h1 className="text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg">
-          🎮 Organiza18
+          PROJETO KRATOS
         </h1>
 
         <div className="flex gap-3">
