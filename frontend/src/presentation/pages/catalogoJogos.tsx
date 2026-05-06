@@ -110,7 +110,7 @@ export default function CatalogoJogos() {
 
       {/* Header */}
       <header className="relative z-10 w-full max-w-[1200px] mx-auto px-6 md:px-10 pt-8 flex justify-between items-center">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-white drop-shadow-lg">
+        <h1 className="text-lg md:text-4xl font-extrabold text-green-300 drop-shadow-lg">
           kidQuest
         </h1>
 
